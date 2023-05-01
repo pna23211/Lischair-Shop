@@ -20,6 +20,7 @@
             來體現出一種完美的美感和舒適的結合，
             這對您的健康將會產生正面而持久的影響。
           </p>
+          <a class="btn btn--big" href="#cta">Shop chairs</a>
         </div>
 
         <div class="slideshow-container">
@@ -41,7 +42,23 @@
         <h2>我們的椅子有何特別之處？</h2>
         <div class="grid-3-cols">
           <div>
-            <p class="features-title"><strong>科學與設計結合</strong></p>
+            <div class="chair-special">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="features-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                />
+              </svg>
+              <p class="features-title"><strong>科學與設計結合</strong></p>
+            </div>
             <p class="features-text">
               家具的設計不僅應注重美感，還要考慮人體工學、材料科學等方面的知識，
               使產品達到最優的舒適度和使用體驗。
@@ -49,9 +66,25 @@
           </div>
 
           <div>
-            <p class="features-title">
-              <strong>極致舒適</strong>
-            </p>
+            <div class="chair-special">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="features-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <p class="features-title">
+                <strong>極致舒適</strong>
+              </p>
+            </div>
             <p class="features-text">
               將人體工學和材料科學融合在一起，以最符合人體工學原理的方式設計椅背、坐墊、扶手等部位，
               從而實現最優的舒適度和使用體驗。
@@ -59,9 +92,25 @@
           </div>
 
           <div>
-            <p class="features-title">
-              <strong>符合道德與永續發展 </strong>
-            </p>
+            <div class="chair-special">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="features-icon"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <p class="features-title">
+                <strong>符合道德與永續發展 </strong>
+              </p>
+            </div>
             <p class="features-text">
               家具設計注重使用環保、可持續的材料和製造工藝，
               實現了環境、經濟和社會效益的平衡和協調。
@@ -109,7 +158,7 @@
               </ul>
               <div class="chair-price">
                 <strong>50€</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
+                <a href="#cta" class="btn btn--small">Add to cart</a>
               </div>
             </div>
           </figure>
@@ -134,7 +183,7 @@
               </ul>
               <div class="chair-price">
                 <strong>125€</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
+                <a href="#cta" class="btn btn--small">Add to cart</a>
               </div>
             </div>
           </figure>
@@ -159,14 +208,74 @@
               </ul>
               <div class="chair-price">
                 <strong>650€</strong>
-                <a href="#" class="btn btn--small">Add to cart</a>
+                <a href="#cta" class="btn btn--small">Add to cart</a>
               </div>
             </div>
           </figure>
         </div>
       </section>
 
-      <footer>&copy; 2023 Lischair Shop</footer>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">獲得50%的優惠折扣</h2>
+              <p class="cta-text">
+                舒適、設計、環保的椅子正等著您。 您可以隨時取消或更改會員身分。
+                開始體驗美好的舒適生活！
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">姓名</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Samantha Lee"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="mail@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">您從哪裡瞭解我們的訊息呢？ </label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">請選擇一個選項：</option>
+                    <option value="friends">朋友和家人</option>
+                    <option value="youtube">YouTube 影片</option>
+                    <option value="podcast">Podcast 節目</option>
+                    <option value="ad">Facebook 廣告</option>
+                    <option value="others">其他</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">立即註冊</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div class="cta-img-box" role="img" aria-label="chair-viewBox">
+              <img src="chair-view.jpg" alt="chair-view" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        Copyright &copy; 2023 by Lischair Shop, Inc. All rights reserved.
+      </footer>
     </div>
   </body>
 </html>

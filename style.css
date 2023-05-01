@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 * {
@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Inter", sans-serif;
+  color: #343a40;
 }
 
 .container {
@@ -19,11 +20,11 @@ body {
 
 header,
 section {
-  margin-bottom: 60px;
+  margin-bottom: 75px;
 }
 
 h2 {
-  margin-bottom: 48px;
+  margin-bottom: 38px;
 }
 
 .grid-3-cols {
@@ -35,7 +36,7 @@ h2 {
 
 .btn:link,
 .btn:visited {
-  background-color: #7f55088a;
+  background-color: #bd7d077e;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -47,7 +48,7 @@ h2 {
 
 .btn:hover,
 .btn:active {
-  background-color: #7f550871;
+  background-color: #7f55088a;
 }
 
 .btn--big {
@@ -62,6 +63,8 @@ h2 {
 
 img {
   border-radius: 12px;
+  margin: auto;
+  width: 100%;
 }
 
 /* HEADER */
@@ -84,10 +87,6 @@ h1 {
 .header-text {
   margin-bottom: 24px;
   line-height: 1.7;
-}
-
-img {
-  width: 100%;
 }
 
 /* 隱藏圖片.mySlides fade中的圖片 */
@@ -128,24 +127,30 @@ display: none;
 
 .fade {
   animation-name: fade;
-  animation-duration: 3.5s; /* 自定義動畫持續時間 */
+  animation-duration: 3s; /* 自定義動畫持續時間 */
   animation-iteration-count: infinite; /* 讓動畫無限循環 */
 }
 
 /* FEATURES */
-
-.features-title {
-  margin-bottom: 16px;
+.features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  /* margin-bottom: 24px; */
 }
+
+/* .features-title {
+  margin-bottom: 16px;
+} */
 
 .features-text {
   /* 功能文字 */
-  line-height: 1.2;
+  line-height: 1.7;
 }
 
 /* 想法 */
 .testimonial-section {
-  background-color: #7f55087e;
+  background-color: #bd7d077e;
   color: #fff;
   padding: 24px;
   border-radius: 12px;
@@ -164,9 +169,17 @@ display: none;
 .testimonial-text {
   font-style: italic;
   margin-bottom: 24px;
+  line-height: 1.7;
 }
 
 /* CHAIRS */
+.chair-special {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
 .chair {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
   border-radius: 12px;
@@ -206,6 +219,98 @@ h3 {
   justify-content: space-between;
 }
 
+/**************************/
+/* CTA SECTION */
+/**************************/
+.section-cta {
+  background-color: #bd7d077e;
+  padding: 48px 0;
+  border-radius: 12px;
+  margin-top: 100px;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 48px;
+  margin-left: 3%;
+  margin-right: 3%;
+  align-items: center;
+  position: relative;
+}
+
+.heading-secondary {
+  /* font-size: 24px; */
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.cta-text {
+  /* font-size: 16px; */
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.cta-form {
+  display: grid;
+  grid-gap: 22px;
+}
+
+.cta-form label {
+  /* font-size: 14px; */
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* font-size: 14px; */
+}
+
+.cta-form button {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #7f5508;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cta-form button:hover {
+  background-color: #9b6b0c;
+}
+
+/* .cta-img-box {
+  background-image: url("chair-view.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 442px;
+  border-radius: 12px;
+} */
+.cta-img-box {
+  height: 442px;
+}
+
+.cta-img-box img {
+  height: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* -------------------------- */
 footer {
   margin-bottom: 48px;
 }
@@ -216,6 +321,10 @@ footer {
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .slideshow-container {
+    height: auto;
   }
 
   .top-box {
@@ -245,6 +354,10 @@ footer {
     text-align: center;
   }
 
+  .header-text-box a {
+    margin-bottom: 50px;
+  }
+
   .testimonial-box {
     grid-column: 1 / -1;
   }
@@ -256,6 +369,23 @@ footer {
 
   .chair img {
     object-fit: cover;
-    height: 440px;
+    height: auto;
+  }
+  /* ------------------- */
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .section-cta {
+    margin-top: 0;
+  }
+
+  .cta-text-box {
+    text-align: center;
+  }
+
+  .cta-img-box {
+    grid-row: 1;
+    height: auto;
   }
 }
